@@ -205,7 +205,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       }
       if (cmd === 'contact') {
         printTyped('reach me at', null, () => {
-          printLink('hello@example.com', 'mailto:hello@example.com');
+          printLink('anel.sakanovic77@gmail.com', 'mailto:anel.sakanovic77@gmail.com');
         });
         return;
       }
