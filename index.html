@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Security headers set via meta (see README-SECURITY.md for the HTTP-header
+     versions your host should also send — meta tags can't cover everything,
+     e.g. frame-ancestors and X-Frame-Options only work as real headers). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<title>Anel — Computer science and Information student, Ljubljana</title>
+<meta name="description" content="I build systems that turn messy input — documentation, records, manual processes — into something structured and usable. CS student in Ljubljana working on local-first RAG and automation tools.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Anel — Computer science and Information student, Ljubljana">
+<meta property="og:description" content="I build systems that turn messy input into something usable — local RAG tools, document automation, and quiz platforms.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="stylesheet" href="fonts.css">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="nav-logo">anel<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-indicator" id="navIndicator" aria-hidden="true"></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#principles">Principles</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<main id="top">
+  <div id="main-content"></div>
+
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <span class="eyebrow">Computer science student · Ljubljana</span>
+      <h1>I build systems that turn messy input into something usable.</h1>
+      <p class="lede">
+        Most of what I work on starts the same way: something that isn't built to be
+        searched, queried, or used easily — internal documentation nobody can find things
+        in, a process that's still done by hand when it doesn't need to be, records that
+        live in a notebook or someone's memory. I build the tools, indexes, and local
+        systems that turn that into something people can actually rely on — and
+        keep it running on infrastructure I control wherever that's the right call.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See selected work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <p class="hero-flow">pdf <span class="arrow">→</span> parsed <span class="arrow">→</span> indexed <span class="arrow">→</span> queryable</p>
+      <div class="hero-meta">
+        <span class="stack-item">Python</span>
+        <span class="stack-item">FastAPI</span>
+        <span class="stack-item">React</span>
+        <span class="stack-item">LlamaIndex</span>
+        <span class="stack-item">Qdrant</span>
+        <span class="stack-item">Ollama</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">About</span>
+        <h2>Document-heavy work, automated one system at a time</h2>
+      </div>
+      <div class="about-grid reveal">
+        <div class="col-text">
+          <p>
+            I'm currently in my third year at FRI, the Faculty of Computer and Information
+            Science in Ljubljana. Day to day, I work in IT at a company that supplies and
+            services laboratory and analytical equipment — mostly building and maintaining
+            a local RAG chatbot the team uses to search internal documentation and task
+            history, plus the usual IT support: fixing whatever's broken on a colleague's
+            machine that week.
+          </p>
+          <p>
+            Outside of that, I build things for people who need something specific:
+            FlockBook, a record-keeping app for a farmer tracking a flock of sheep, and
+            QuizArena, a public quiz platform with a leaderboard and user ratings. I also
+            run a small football and graphic design page on the side. The thread connecting
+            all of it is the same regardless of domain: take something unstructured or hard
+            to use, and turn it into something people can actually rely on.
+          </p>
+        </div>
+        <aside class="about-aside">
+          <dl>
+            <dt>Based in</dt>
+            <dd>Ljubljana, Slovenia</dd>
+            <dt>Studying</dt>
+            <dd>Computer &amp; information science, FRI</dd>
+            <dt>Day to day</dt>
+            <dd>Local RAG chatbot, IT support for colleagues</dd>
+            <dt>Also building</dt>
+            <dd>Tools for a couple of outside clients, on the side</dd>
+          </dl>
+        </aside>
+      </div>
+      <div class="about-grid about-grid-secondary reveal">
+        <div class="col-text">
+          <p>
+            I've also spent time on design outside of code — business cards, logos,
+            that kind of thing — and it's stuck with me. I still think about interfaces
+            as design problems as much as engineering ones, which is part of why
+            interfaces (this site included) get real attention, not just the systems
+            behind them.
+          </p>
+        </div>
+        <aside class="about-aside">
+          <dl>
+            <dt>Also designs</dt>
+            <dd>Business cards, logos, UI/UX</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Selected work</span>
+        <h2>A few projects that show how I approach a problem</h2>
+        <p>Not an exhaustive list — the ones that best show the kind of work I actually enjoy.</p>
+      </div>
+
+      <div class="work-list">
+
+        <article class="project reveal">
+          <div class="project-head">
+            <span class="project-title">Local RAG assistant over internal documentation</span>
+            <span class="project-index">01</span>
+          </div>
+          <div class="flow">docs + task DB → LlamaIndex / Qdrant (hybrid) → Ollama (local LLM) → chat / CLI</div>
+          <div class="project-body">
+            <div>
+              <h4>Problem</h4>
+              <p>Colleagues needed to search internal documentation and past task history, but the material is sensitive enough that routing it through an external API wasn't an option.</p>
+            </div>
+            <div>
+              <h4>What I built</h4>
+              <p>A retrieval-augmented chatbot running entirely on local infrastructure: LlamaIndex over a Qdrant vector store with hybrid dense + sparse retrieval (bge-m3 embeddings plus BM25), served by a local Ollama model. A dual-mode retriever blends document search with a guarded natural-language-to-SQL agent over a MySQL task database, so the same interface answers "what does the policy say" and "what's the status of this task."</p>
+            </div>
+            <div>
+              <h4>Why it matters</h4>
+              <p>Ingestion handles PDF, DOCX, PPTX, CSV, and XLSX, plus OCR for scanned Slovenian, Croatian, and Serbian documents, with incremental indexing and checkpointing so re-runs don't start from zero. Nothing leaves the building.</p>
+            </div>
+          </div>
+
+          <div class="diagram" role="img" aria-label="Diagram styled as a football tactics board: data sources sit at the back, ingestion in midfield, a highlighted dual-mode retriever as the central playmaker, the local Ollama model as the attacker, and the output as the goal, connected by dashed passing lines.">
+            <svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="'IBM Plex Mono', monospace">
+              <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M0,0 L10,5 L0,10 z" fill="#c98a46"/>
+                </marker>
+              </defs>
+
+              <!-- Pitch -->
+              <rect x="30" y="35" width="840" height="245" rx="20" fill="none" stroke="#383b44" stroke-width="1"/>
+              <rect x="760" y="90" width="70" height="120" rx="4" fill="none" stroke="#383b44" stroke-width="1" opacity="0.6"/>
+              <line x1="450" y1="35" x2="450" y2="280" stroke="#383b44" stroke-width="1" opacity="0.6"/>
+              <circle cx="450" cy="150" r="55" fill="none" stroke="#383b44" stroke-width="1" opacity="0.6"/>
+              <text x="175" y="16" fill="#6b6f78" font-size="9.5" text-anchor="middle" letter-spacing="0.5">SOURCES</text>
+              <text x="730" y="16" fill="#6b6f78" font-size="9.5" text-anchor="middle" letter-spacing="0.5">DELIVERY</text>
+
+              <!-- Passing lanes -->
+              <line class="flow-line" x1="116" y1="75" x2="234" y2="75" stroke="#c98a46" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+              <line class="flow-line" x1="116" y1="225" x2="234" y2="225" stroke="#c98a46" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+              <line class="flow-line" x1="265" y1="81" x2="431" y2="143" stroke="#c98a46" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+              <line class="flow-line" x1="265" y1="219" x2="431" y2="157" stroke="#c98a46" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+              <line class="flow-line" x1="470" y1="150" x2="634" y2="150" stroke="#c98a46" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+              <line class="flow-line" x1="666" y1="150" x2="789" y2="150" stroke="#c98a46" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+
+              <!-- Back line: sources -->
+              <circle cx="100" cy="75" r="16" fill="#1c1e23" stroke="#383b44" stroke-width="1"/>
+              <circle cx="100" cy="225" r="16" fill="#1c1e23" stroke="#383b44" stroke-width="1"/>
+              <text x="100" y="107" fill="#9a9ea8" font-size="10" text-anchor="middle">Docs</text>
+              <text x="100" y="121" fill="#6b6f78" font-size="8.5" text-anchor="middle">pdf · docx · pptx · csv</text>
+              <text x="100" y="257" fill="#9a9ea8" font-size="10" text-anchor="middle">MySQL tasks</text>
+              <text x="100" y="271" fill="#6b6f78" font-size="8.5" text-anchor="middle">internal task DB</text>
+
+              <!-- Midfield: ingestion -->
+              <circle cx="250" cy="75" r="16" fill="#1c1e23" stroke="#383b44" stroke-width="1"/>
+              <circle cx="250" cy="225" r="16" fill="#1c1e23" stroke="#383b44" stroke-width="1"/>
+              <text x="250" y="107" fill="#9a9ea8" font-size="10" text-anchor="middle">Ingest + embed</text>
+              <text x="250" y="121" fill="#6b6f78" font-size="8.5" text-anchor="middle">bge-m3, OCR, checkpoints</text>
+              <text x="250" y="257" fill="#9a9ea8" font-size="10" text-anchor="middle">Guarded SQL agent</text>
+              <text x="250" y="271" fill="#6b6f78" font-size="8.5" text-anchor="middle">read-only, natural language</text>
+
+              <!-- Playmaker: retriever -->
+              <circle cx="450" cy="150" r="20" fill="#221a10" stroke="#c98a46" stroke-width="1.5"/>
+              <text x="450" y="186" fill="#c98a46" font-size="10.5" text-anchor="middle">Dual-mode retriever</text>
+              <text x="450" y="200" fill="#c98a46" font-size="8.5" text-anchor="middle" opacity="0.8">docs / db / both — Qdrant hybrid</text>
+
+              <!-- Striker: local model -->
+              <circle cx="650" cy="150" r="16" fill="#1c1e23" stroke="#383b44" stroke-width="1"/>
+              <text x="650" y="182" fill="#9a9ea8" font-size="10" text-anchor="middle">Ollama</text>
+              <text x="650" y="196" fill="#6b6f78" font-size="8.5" text-anchor="middle">local LLM</text>
+
+              <!-- Goal: output -->
+              <rect x="790" y="138" width="54" height="24" rx="4" fill="#1c1e23" stroke="#383b44" stroke-width="1"/>
+              <line x1="797" y1="142" x2="797" y2="158" stroke="#383b44" stroke-width="0.5"/>
+              <line x1="807" y1="142" x2="807" y2="158" stroke="#383b44" stroke-width="0.5"/>
+              <line x1="817" y1="142" x2="817" y2="158" stroke="#383b44" stroke-width="0.5"/>
+              <line x1="827" y1="142" x2="827" y2="158" stroke="#383b44" stroke-width="0.5"/>
+              <line x1="837" y1="142" x2="837" y2="158" stroke="#383b44" stroke-width="0.5"/>
+              <text x="817" y="178" fill="#9a9ea8" font-size="10" text-anchor="middle">Output</text>
+              <text x="817" y="192" fill="#6b6f78" font-size="8.5" text-anchor="middle">CLI / Streamlit chat</text>
+            </svg>
+          </div>
+
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">LlamaIndex</span>
+            <span class="tag">Qdrant</span>
+            <span class="tag">Ollama</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/ragbot-qdrant" target="_blank" rel="noopener noreferrer">View source ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <span class="project-title">QuizArena — a public quiz platform</span>
+            <span class="project-index">02</span>
+          </div>
+          <div class="flow">author quizzes → public browsing → solve & score → rate once → leaderboard</div>
+          <div class="project-body">
+            <div>
+              <h4>Problem</h4>
+              <p>Ad-hoc quizzes are easy to write and hard to trust — there's no way to tell a well-made one from a rushed one before you've already spent time on it, and no easy way to see whether you're actually improving across repeated attempts.</p>
+            </div>
+            <div>
+              <h4>What I built</h4>
+              <p>A web app for creating, browsing, and solving quizzes, with results tracked per user so people can watch their own progress over time. Every quiz can be rated once after solving, so quizzes can be sorted by rating instead of just recency — a much better signal for someone deciding what to try next. A leaderboard adds a bit of competitive motivation on top.</p>
+            </div>
+            <div>
+              <h4>Why it matters</h4>
+              <p>It turns quiz-taking into something with a feedback loop on both sides — progress tracking for the person answering, and a quality signal (via ratings) for whoever wrote the quiz.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Quiz platform</span>
+            <span class="tag">Leaderboard</span>
+            <span class="tag">User ratings</span>
+            <span class="tag">Live</span>
+          </div>
+          <div class="project-links">
+            <a href="https://quizarena-is.azurewebsites.net/" target="_blank" rel="noopener noreferrer">View live ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <span class="project-title">Order acknowledgement parser</span>
+            <span class="project-index">03</span>
+          </div>
+          <div class="flow">order PDF → parsed BOM (flat + nested) → validated Excel (totals + checks)</div>
+          <div class="project-body">
+            <div>
+              <h4>Problem</h4>
+              <p>Lab equipment order acknowledgements arrive as PDFs with flat or deeply nested bill-of-materials structures, and turning them into something finance and fulfillment can actually work with used to be a manual copy-paste job.</p>
+            </div>
+            <div>
+              <h4>What I built</h4>
+              <p>A Python script that parses both BOM structures and exports a structured Excel file — colour-coded rows, formula-based totals, and a validation pass that flags rows that don't add up — after I'd done the conversion by hand once to know exactly which edge cases mattered.</p>
+            </div>
+            <div>
+              <h4>Why it matters</h4>
+              <p>It replaced a recurring, error-prone manual task with something that runs the same way every time, in a workflow conducted mostly in Slovenian.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PDF parsing</span>
+            <span class="tag">Excel automation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/yourusername/waters-oa-automation" target="_blank" rel="noopener noreferrer">View source ↗</a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-head">
+            <span class="project-title">FlockBook — flock record-keeping for a farmer</span>
+            <span class="project-index">04</span>
+          </div>
+          <div class="flow">record per animal → weight · medical · breeding → CSV export</div>
+          <div class="project-body">
+            <div>
+              <h4>Problem</h4>
+              <p>Tracking a flock of sheep by hand makes it hard to see any one animal's history — weight over time, medical treatments, breeding and lambing — without digging through paper records or relying on memory.</p>
+            </div>
+            <div>
+              <h4>What I built</h4>
+              <p>A mobile-friendly React app for logging and reviewing records per animal: weight history, medical treatments, reminders, and lambing/breeding records, with CSV export for anything that needs to leave the app — an accountant, a vet, a buyer.</p>
+            </div>
+            <div>
+              <h4>Why it matters</h4>
+              <p>It's live and actually in use, not just a repo that runs on a laptop.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">CSV export</span>
+            <span class="tag">Netlify</span>
+          </div>
+          <div class="project-links">
+            <a href="https://mojeovce.netlify.app/" target="_blank" rel="noopener noreferrer">View live ↗</a>
+            <a href="https://github.com/iamsakan/flockbook" target="_blank" rel="noopener noreferrer">View source ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="principles">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How I work</span>
+        <h2>A few things true across most of these projects</h2>
+      </div>
+      <div class="principles-grid reveal">
+        <div class="principle">
+          <span class="eyebrow">Local-first</span>
+          <p>If a task doesn't need the cloud, it doesn't get the cloud. Internal documents and task data stay on infrastructure I control, indexed and queried by models running locally.</p>
+        </div>
+        <div class="principle">
+          <span class="eyebrow">Built for real people</span>
+          <p>A project isn't done when the code runs — it's done when someone's actually using it. Coworkers search documentation through the RAG chatbot, a farmer logs flock records in FlockBook, people solve and rate quizzes on QuizArena. That's the bar, not a repo that only runs on a laptop.</p>
+        </div>
+        <div class="principle">
+          <span class="eyebrow">Don't trust free text</span>
+          <p>Language models draft well and promise structure badly. I constrain outputs with schemas, validate them against the source, and keep a guarded path — like read-only SQL — between a model and anything that matters.</p>
+        </div>
+        <div class="principle">
+          <span class="eyebrow">Automate after, not instead of</span>
+          <p>Most of my tools started as a task I did by hand at least once. That manual pass is what tells you which edge cases actually matter before you build the wrong automation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="technology">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Technology</span>
+        <h2>What I actually build with</h2>
+      </div>
+      <div class="tech-grid reveal">
+        <div class="tech-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>TypeScript / JavaScript</li>
+            <li>SQL</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div class="tech-group">
+          <h3>AI &amp; retrieval</h3>
+          <ul>
+            <li>Ollama</li>
+            <li>LlamaIndex</li>
+            <li>Qdrant</li>
+            <li>Hybrid / BM25 search</li>
+          </ul>
+        </div>
+        <div class="tech-group">
+          <h3>Backend &amp; data</h3>
+          <ul>
+            <li>FastAPI</li>
+            <li>MySQL / SQLite</li>
+            <li>PDF, DOCX, PPTX parsing</li>
+            <li>OCR</li>
+          </ul>
+        </div>
+        <div class="tech-group">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React</li>
+            <li>Semantic, accessible HTML</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="now">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Currently exploring</span>
+        <h2>What's next</h2>
+      </div>
+      <div class="now-box reveal">
+        <p>
+          I'm still narrowing down my diploma thesis topic — leaning toward something that
+          builds on the local, LLM-assisted tooling I already work with day to day, but I'd
+          rather not lay out specifics here before it's settled.
+        </p>
+        <p>
+          In parallel, I'm archiving a vendor's support knowledge base so it can be indexed
+          into the same local retrieval system I built for internal documentation — extending
+          it from "our" documents to a much larger reference library.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2 class="mt-10">Get in touch</h2>
+          <p class="mt-16">
+            If you're working on something involving document processing, local language
+            models, or data that shouldn't leave your building, I'd like to hear about it.
+          </p>
+        </div>
+        <div>
+          <ul class="contact-links">
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:anel.sakanovic77@gmail.com">anel.sakanovic77@gmail.com</a>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <a href="https://github.com/IamSakan" target="_blank" rel="noopener noreferrer">github.com/IamSakan</a>
+            </li>
+            <li>
+              <span class="label">LinkedIn</span>
+              <a href="https://linkedin.com/in/anel-sakanovic" target="_blank" rel="noopener noreferrer">linkedin.com/in/anel-sakanovic</a>
+            </li>
+          </ul>
+          <p class="placeholder-note mt-14">Placeholder links — replace with your real email, GitHub, and LinkedIn before publishing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Anel. Built with plain HTML, CSS, and a little JS.</p>
+  <button type="button" class="egg-hint" id="eggHintBtn" aria-label="Open command prompt">press /</button>
+  <a href="#top" class="to-top">Back to top ↑</a>
+</footer>
+
+<div class="egg-overlay" id="eggOverlay" role="dialog" aria-modal="true" aria-label="Command prompt">
+  <div class="egg-panel">
+    <div class="egg-output" id="eggOutput">
+      <div class="line">type <span class="egg-accent">/help</span> to see what's here.</div>
+    </div>
+    <div class="egg-input-row">
+      <span class="egg-prompt">/</span>
+      <input type="text" id="eggInput" class="egg-input" placeholder="whoami" autocomplete="off" spellcheck="false">
+      <kbd class="egg-esc">esc</kbd>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
