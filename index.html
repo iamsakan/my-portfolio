@@ -239,7 +239,41 @@
             <span class="tag">Streamlit</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/yourusername/ragbot-qdrant" target="_blank" rel="noopener noreferrer">View source ↗</a>
+            <span class="private">Internal company project · source not public</span>
+          </div>
+        </article>
+
+                <article class="project reveal">
+          <div class="project-head">
+            <span class="project-title">Urnik Optimizer — conflict-free lab schedules for FRI students</span>
+            <span class="project-index">02</span>
+          </div>
+          <div class="flow">student ID → serverless scraper → backtracking search → ranked weeks + groups to request</div>
+          <div class="project-body">
+            <div>
+              <h4>Problem</h4>
+              <p>Every semester, FRI students get a timetable where lab sessions clash with each other or with lectures, or are scattered across the week with long gaps. Finding a better combination by hand means comparing dozens of group options across every subject.</p>
+            </div>
+            <div>
+              <h4>What I built</h4>
+              <p>A web app that loads a student's timetable from the faculty site through a Netlify function, then treats lab selection as a constraint satisfaction problem: a backtracking search tries every combination of lab groups, drops any with overlaps, and ranks the rest by the student's own priorities — free days, gaps, early or late hours. It ends with a concrete list of which groups to keep, swap or join.</p>
+            </div>
+            <div>
+              <h4>Why it matters</h4>
+              <p>It solves a problem every FRI student runs into at the start of a semester. Subject pages are cached so the faculty server isn't hammered, student IDs are never stored, and the solver is covered by tests that run on every push.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Netlify Functions</span>
+            <span class="tag">Web scraping</span>
+            <span class="tag">Backtracking</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Live</span>
+          </div>
+          <div class="project-links">
+            <a href="https://urnik-optimizer.netlify.app/" target="_blank" rel="noopener noreferrer">View live ↗</a>
+            <a href="https://github.com/iamsakan/urnik-optimizer" target="_blank" rel="noopener noreferrer">View source ↗</a>
           </div>
         </article>
 
@@ -300,7 +334,7 @@
             <span class="tag">Excel automation</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/yourusername/waters-oa-automation" target="_blank" rel="noopener noreferrer">View source ↗</a>
+            <span class="private">Internal company project · source not public</span>
           </div>
         </article>
 
